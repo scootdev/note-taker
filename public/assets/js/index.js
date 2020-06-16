@@ -51,9 +51,11 @@ const renderActiveNote = () => {
 
 // Get the note data from the inputs, save it to the db and update the view
 const handleNoteSave = function () {
+  const id = generateID();
   const newNote = {
     title: $noteTitle.val(),
     text: $noteText.val(),
+    id: Date.now()
   };
 
   saveNote(newNote).then(() => {
@@ -140,6 +142,13 @@ const getAndRenderNotes = () => {
   return getNotes().then(renderNoteList);
 };
 
+const generateID = () => {
+  return $.ajax({
+    url: "/api/id",
+    method: "GET",
+  });
+}
+
 $saveNoteBtn.on("click", handleNoteSave);
 $noteList.on("click", ".list-group-item", handleNoteView);
 $newNoteBtn.on("click", handleNewNoteView);
@@ -149,3 +158,5 @@ $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();
+
+console.log(generateID());

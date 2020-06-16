@@ -6,7 +6,7 @@
  - [How It Works](#how-it-works)
     - [Express Server](#express-server)
     - [Data Management](#data-management)
-    - [Unique Id's](#unique-id's)
+    - [Unique Id](#unique-id)
  - [Application Link](#application-link)
 
 ## Description
@@ -74,7 +74,7 @@ router.delete("/notes/:id", (req, res) => {
     })
 })
 ```
-### Unique Id's
+### Unique Id
 To set a unique id for each note I used `Date.now()`. This method returns the number of milliseconds elapsed since January 1st, 1970. This was an appropriate method for this application because the user would not be saving multiple notes within the same millisecond. An alternative would be to run a loop thru the note list to check an id number against the existing id's until a unique number is found - this would ensure that every id is unique. Although `Date.now()` does not guarantee a unique number, the chances of someone submitting 2 or more notes in the exact same millisecond are slim to none.
 
 ## Application Link

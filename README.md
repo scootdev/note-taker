@@ -1,8 +1,8 @@
 # Note Taker
 
 ## Table of Contents
- - [Description](##Description)
- - [Usage](##Usage)
+ - [Description](##description)
+ - [Usage](##usage)
  - [How It Works](##How%20It%20Works)
     - [Express Server](###Express-Server)
     - [Data Management](###Data-Management)

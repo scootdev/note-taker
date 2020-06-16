@@ -1,13 +1,13 @@
 # Note Taker
 
 ## Table of Contents
- - [Description](##description)
- - [Usage](##usage)
- - [How It Works](##How%20It%20Works)
-    - [Express Server](###Express-Server)
-    - [Data Management](###Data-Management)
-    - [Unique Id's](###Unique-Id's)
- - [Application Link](##Application-Link)
+ - [Description](#description)
+ - [Usage](#usage)
+ - [How It Works](#how-it-works)
+    - [Express Server](#express-server)
+    - [Data Management](#data-management)
+    - [Unique Id's](#unique-id's)
+ - [Application Link](#application-link)
 
 ## Description
 This is a simple web application for taking and saving notes. Notes are stored in a database on an express server and will save and update in realtime for anyone visiting the website.

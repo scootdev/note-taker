@@ -3,7 +3,7 @@
 ## Table of Contents
  - [Description](##Description)
  - [Usage](##Usage)
- - [How It Works](##How-It-Works)
+ - [How It Works](##How%20It%20Works)
     - [Express Server](###Express-Server)
     - [Data Management](###Data-Management)
     - [Unique Id's](###Unique-Id's)

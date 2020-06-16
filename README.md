@@ -20,7 +20,6 @@ Using the application is very easy and mostly self explainatory. To create a new
 Saved notes will appear in the left hand column. Click on a saved note to view its contents or click the red trash can icon to delete the saved note.
 
 ## How It Works
-------------------------
 ### Express Server
 The application uses a basic express server and json file to handle requests and save data. 
 
